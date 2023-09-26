@@ -12,6 +12,10 @@
 /*	border:1px solid black;*/
 }
 
+.max-width{
+	max-width: 900px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -90,20 +94,26 @@ body {
 
 /*-----------------------About-----------------------*/
 
+.about{
+	background-color: white;
+	display: flex;
+	justify-content: center;
+}
+
 #about{
-	padding-left: 20%;
-  padding-right: 20%;
 	background-color: white;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
 	position: relative;
+	max-width: 900px;
 }
 
 .about_me{
 	width: 70%;
 	color: var(--dark-green);
 	align-self: center;
+	padding: 15px;
 	z-index: 1;
 }
 
@@ -127,16 +137,24 @@ hr{
 	width: 350px;
 	position: absolute;
 	bottom: 0;
-	right: 250px;
+	right: 0px;
 	z-index: 0;
 }
 
 
 /*-----------------------What doing-----------------------*/
 
+.what_doing{
+	display: flex;
+  justify-content: center;
+	background: #417972;
+}
+
 #what_doing{
-	padding-left: 20%;
-  padding-right: 20%;
+	max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 	background: #417972;
 }
 
@@ -188,15 +206,21 @@ hr{
 
 /*-----------------------Projects-----------------------*/
 
+.projects{
+	display: flex;
+	justify-content: center;
+	background: var(--dark-green);
+}
+
 #projects{
+	max-width: 900px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	padding-left: 20%;
-  padding-right: 20%;
 	background-color: var(--dark-green);
-	height: 660px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 #projects img{
@@ -213,17 +237,22 @@ hr{
 
 /*-----------------------Example-----------------------*/
 
+.exmaple{
+	display: flex;
+	justify-content: center;
+	background-color: var(--light-green);
+}
+
 #example{
+	max-width: 900px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	padding-left: 20%;
-  	padding-right: 20%;
 	background-color: var(--light-green);
 }
 
 #example img{
-	max-width: 500px;
+	width: 100%;
 	border: 10px solid var(--dark-green);
 }
 
@@ -243,18 +272,29 @@ hr{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	flex-wrap: wrap;
 	margin-bottom: 20px;
 }
 
+.example_task div{
+	max-width: 400px;
+}
+
 .example_task_text{
-	margin: 10px;
+	margin: 10px 10px 10px 50px;
 }
 
 /*-----------------------Workflow-----------------------*/
 
+.workflow{
+	display: flex;
+	justify-content: center;
+	background-color: var(--dark-green);
+	padding: 15px;
+}
+
 #workflow{
-	padding-left: 20%;
-  	padding-right: 20%;
+	max-width: 900px;
 	background-color: var(--dark-green);
 }
 
@@ -271,15 +311,19 @@ hr{
 	color: white;
 }
 
-/*-----------------------Workflow-----------------------*/
+/*-----------------------Prices-----------------------*/
+
+.prices{
+	display: flex;
+	justify-content: center;
+}
 
 #prices{
+	max-width: 900px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	padding-left: 20%;
-  padding-right: 20%;
   background-color: white;
   color: var(--light-green);
 }
@@ -291,6 +335,7 @@ hr{
 	margin-bottom: 50px;
 	width: 250px;
 	border-collapse: collapse;
+	margin: 15px;
 }
 
 #prices table:hover{
@@ -321,11 +366,16 @@ hr{
 
 /*-----------------------Contact-----------------------*/
 
-#contact{
-	padding-left: 20%;
-  padding-right: 20%;
+.contact{
 	background-color: var(--light-green);
+	display: flex;
 	justify-content: center;
+}
+
+#contact{
+	width: 90%;
+	max-width: 900px;
+	background-color: var(--light-green);
 }
 
 .form-inner{
