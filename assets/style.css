@@ -1,0 +1,397 @@
+@font-face {
+  font-family: 'Tauri';
+  src: url('Tauri-Regular.ttf') format('truetype');
+}
+
+:root {
+  --dark-green: #162C38;
+  --light-green: #417972;
+}
+
+*{
+/*	border:1px solid black;*/
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Tauri;
+}
+
+
+/*-----------------------Header-----------------------*/
+
+#header{
+	background-color: var(--dark-green);
+	display: flex;
+	justify-content: flex-end;
+	padding-left: 200px;
+}
+
+.header_text{
+	margin-top: 150px;
+}
+
+#header h2{
+	width: 200px; 
+	height: 40px;
+	color: white; 
+	font-size: 20px; 
+	font-family: Tauri; 
+}
+
+#header h1{
+	width: 283px; 
+	color: white; 
+	font-size: 60px; 
+	font-family: Tauri; 
+}
+
+#header p{
+	color: #F2D381;
+	font-size: 16px;
+	width: 343px;
+	height: 81px;
+	font-family: Tauri; 
+	margin-top: 20px;
+}
+
+.line1{
+	position: absolute;
+}
+
+.line2{
+	position: absolute;
+	left: 40%;
+}
+
+.line3{
+	position: absolute;
+	top: 658px;
+}
+
+.line4{
+	position: absolute;
+	right: 0;
+	height: 200px;
+}
+
+.myimage{
+	width: 800px;
+	border-top-left-radius: 123px;
+	margin-top: 200px;
+}
+
+
+
+
+
+/*-----------------------About-----------------------*/
+
+#about{
+	padding-left: 20%;
+  padding-right: 20%;
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+}
+
+.about_me{
+	width: 70%;
+	color: var(--dark-green);
+	align-self: center;
+	z-index: 1;
+}
+
+hr{
+	width: 100px;
+	margin-left: 0;
+}
+
+#about h1{
+	font-size: 40px;
+}
+
+#about p{
+	margin-right: 50px;
+	font-size: 20px;
+}
+
+#about img{
+	/*align-self: flex-end;
+	justify-self: flex-end;*/
+	width: 350px;
+	position: absolute;
+	bottom: 0;
+	right: 250px;
+	z-index: 0;
+}
+
+
+/*-----------------------What doing-----------------------*/
+
+#what_doing{
+	padding-left: 20%;
+  padding-right: 20%;
+	background: #417972;
+}
+
+#what_doing h2{
+	font-family: Tauri;
+	font-size: 40px;
+	color: white;
+}
+
+.specs{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;	
+}
+
+.spec_item{
+	display: flex;
+	justify-content: flex-start;
+	background-color: white;
+	width: 400px;
+	height: 194px; 
+	border-radius: 28px;
+	margin: 25px;
+}
+
+.spec_item h1{
+	color: var(--light-green);
+	font-size: 20px;
+	align-self: flex-start;
+}
+
+.spec_item p{
+	color: var(--light-green);
+	font-size: 15px;
+	align-self: flex-start;
+	margin-right: 20px;
+}
+
+.spec_img{
+	align-self: center;
+	margin: 20px;
+}
+
+.spec_text{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*-----------------------Projects-----------------------*/
+
+#projects{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-left: 20%;
+  padding-right: 20%;
+	background-color: var(--dark-green);
+	height: 660px;
+}
+
+#projects img{
+	width: 100%;
+	max-width: 970px;
+}
+
+#projects h1{
+	font-size: 70px;
+	color: var(--light-green);
+	margin: 0;
+	padding: 0;
+}
+
+/*-----------------------Example-----------------------*/
+
+#example{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-left: 20%;
+  	padding-right: 20%;
+	background-color: var(--light-green);
+}
+
+#example img{
+	max-width: 500px;
+	border: 10px solid var(--dark-green);
+}
+
+#example h1{
+	color: white;
+}
+
+#example p{
+	color: white;
+}
+
+#example ul{
+	color: white;
+}
+
+.example_task{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.example_task_text{
+	margin: 10px;
+}
+
+/*-----------------------Workflow-----------------------*/
+
+#workflow{
+	padding-left: 20%;
+  	padding-right: 20%;
+	background-color: var(--dark-green);
+}
+
+#workflow img{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+#workflow h1{
+	color: white;
+}
+
+#workflow p{
+	color: white;
+}
+
+/*-----------------------Workflow-----------------------*/
+
+#prices{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding-left: 20%;
+  padding-right: 20%;
+  background-color: white;
+  color: var(--light-green);
+}
+
+#prices table{
+	box-shadow: 2px 2px 2px 2px #888888;
+	position: relative;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 250px;
+	border-collapse: collapse;
+}
+
+#prices table:hover{
+/*		transition: ease 3s;*/
+	top: 5px;
+	right: 5px;
+	box-shadow: 5px 5px 5px 5px #888888;
+}
+
+#prices th, td{
+	border: 3px solid var(--light-green);
+	padding-left:10px;
+	padding-right:10px;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.even_td{
+	height: 140px;
+	text-align: center;
+	color: #297373;
+	text-justify: left;
+}
+
+.option{
+	margin: 5px;
+}
+
+/*-----------------------Contact-----------------------*/
+
+#contact{
+	padding-left: 20%;
+  padding-right: 20%;
+	background-color: var(--light-green);
+	justify-content: center;
+}
+
+.form-inner{
+	margin: auto;
+	align-self: center;
+  justify-content: center;
+  padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 500px;
+}
+
+#contact h1{
+	color: white;
+	text-align: center;
+}
+
+.form-inner input,
+.form-inner textarea {
+	outline: none;
+	display: block;
+	width: 94%;
+	padding: 15px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 20px;
+	background: #d0dfe8;
+	resize: none;
+}
+
+button {
+	width: 100%;
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 20px;
+	border: none;
+	border-bottom: 4px solid #3e4f24;
+	background: #F2D381; 
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--dark-green);
+}
+button:hover {
+	background: #3e4f24;
+} 
+
+
+/*-----------------------What doing-----------------------*/
+
+#copyright{
+	padding-left: 20%;
+  	padding-right: 20%;
+	background-color: var(--dark-green);
+	color: white;
+	text-align: center;
+	margin: 0;
+}
+
+@media (max-width: 767px) {
+	#projects {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+
+
+
