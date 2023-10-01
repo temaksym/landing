@@ -205,8 +205,13 @@ hr{
 }
 
 .spec_img{
+	width: 200px;
 	align-self: center;
 	margin: 20px;
+}
+
+.spec_img img{
+	width: 100%;
 }
 
 .spec_text{
@@ -240,6 +245,7 @@ hr{
 }
 
 #projects h1{
+	text-align: center;
 	font-size: 70px;
 	color: var(--light-green);
 	margin: 0;
@@ -269,6 +275,7 @@ hr{
 
 #example h1{
 	color: white;
+	text-align: center;
 }
 
 #example p{
@@ -522,6 +529,23 @@ button:hover {
 		#about{
 			padding-bottom: 100px;
 		}
+
+		.spec_item{
+			width: 95%;
+		}
+
+		.spec_img{width: 70%}
+
+		#what_doing img{
+			width: 100%;
+		}
+
+		.example_task_text{
+			margin: 10px 10px 10px 10px;
+		}
+		.example_task{
+			width: 95%;
+		} 
 }
 
 
