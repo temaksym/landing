@@ -31,11 +31,11 @@ body {
 	background-color: var(--dark-green);
 	display: flex;
 	justify-content: flex-end;
-	padding-left: 200px;
+	position: relative;
 }
 
 .header_text{
-	margin-top: 150px;
+	margin: 150px 0px 0px 15px;
 }
 
 #header h2{
@@ -64,28 +64,39 @@ body {
 
 .line1{
 	position: absolute;
+	left: 0;
+	top: 0;
+	width: 15%;
 }
 
 .line2{
 	position: absolute;
 	left: 40%;
+	width: 15%;
 }
 
 .line3{
 	position: absolute;
-	top: 658px;
+	bottom: 0;
+	left: 0;
+	width: 40%;
 }
 
 .line4{
 	position: absolute;
 	right: 0;
-	height: 200px;
+	width: 5%;
+}
+
+.myimage_box{
+	width: 65%;
+	border-top-left-radius: 123px;
+	margin-top: 200px;
 }
 
 .myimage{
-	width: 800px;
+	width: 100%;
 	border-top-left-radius: 123px;
-	margin-top: 200px;
 }
 
 
@@ -364,6 +375,24 @@ hr{
 	margin: 5px;
 }
 
+#prices button{
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-bottom: 4px solid #3e4f24;
+	background: #F2D381; 
+	font-size: 16px;
+	color: var(--dark-green);
+}
+
+#prices button:hover{
+	background: #C8AD55; 
+}
+
+.option-button{
+	padding: 0;
+}
+
 /*-----------------------Contact-----------------------*/
 
 .contact{
@@ -407,7 +436,7 @@ hr{
 	resize: none;
 }
 
-button {
+#contact button {
 	width: 100%;
 	padding: 10px;
 	margin-top: 20px;
@@ -428,12 +457,58 @@ button:hover {
 
 #copyright{
 	padding-left: 20%;
-  	padding-right: 20%;
+  padding-right: 20%;
 	background-color: var(--dark-green);
 	color: white;
 	text-align: center;
 	margin: 0;
 }
+
+
+
+
+
+@media (max-width: 900px) {
+	#header{
+		
+		background: linear-gradient(
+	          rgba(0, 0, 0, 0.5), 
+	          rgba(0, 0, 0, 0.5)
+	        ), url(images/myPhoto.jpg);
+		background-size: cover;
+		padding: 0px 20px 0px 0px;
+}
+
+	.myimage_box{
+		display: none;
+	}
+	
+
+	.line1{display: none;}
+	.line2{display: none;}
+	.line3{display: none;}
+	.line4{display: none;}
+
+	#about{
+		padding: 0px 15px 80px 15px;
+	}
+
+	#about p{
+		margin:0;
+	}
+
+	.what_doing h2{
+		align-self: center;
+	}
+
+	#projects h1{
+		align-self: center;
+	}
+}
+
+
+
+
 
 @media (max-width: 767px) {
 	#projects {
@@ -443,5 +518,10 @@ button:hover {
 }
 
 
+@media(max-width: 500px){
+		#about{
+			padding-bottom: 100px;
+		}
+}
 
 
